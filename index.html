@@ -8,9 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <!-- font-awesome link  -->
+    <script
+      src="https://kit.fontawesome.com/f1a11fb0ce.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- bootstrap css link  -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -22,8 +27,154 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Hello World</h1>
+    <!-- header start  -->
+    <header class="container">
+      <!-- navbar start  -->
+      <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images/logo.png"
+              alt="Logo Of Website"
+              width="150"
+              height="30"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold fs-6">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Shoes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Bagpack</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Subscribe</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- slider section start  -->
+      <section class="my-5 p-5 rounded w-100 mx-auto" id="slider">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-between">
+                <div class="banner-description me-5 py-2">
+                  <h1 class="fw-semibold mb-3">Cool Dude Headphone</h1>
+                  <p class="mb-3">
+                    This is the best headphone in the world for people who just
+                    want to waste time in front of funky world.
+                  </p>
+                  <h1 class="fw-semibold mb-2" id="banner-price">$420</h1>
+                  <button class="btn" id="button">
+                    Buy Now <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                <div class="banner-image">
+                  <img
+                    src="images/banner-images/headphone.png"
+                    class="d-block w-75 img-fluid"
+                    alt="Banner of headphone"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-between">
+                <div class="banner-description me-5 py-2">
+                  <h1 class="fw-semibold mb-3">Mega LCD TV For Sports</h1>
+                  <p class="mb-3">
+                    This is the best television in the world for people who just
+                    want to waste time in front of funky world.
+                  </p>
+                  <h1 class="fw-semibold mb-2" id="banner-price">$1200</h1>
+                  <button class="btn" id="button">
+                    Buy Now <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                <div class="banner-image">
+                  <img
+                    src="images/banner-images/tv.png"
+                    class="d-block w-75 img-fluid"
+                    alt="Banner of headphone"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-between">
+                <div class="banner-description me-5 py-2">
+                  <h1 class="fw-semibold mb-3">X-Box for your living room</h1>
+                  <p class="mb-3">
+                    This is the best x-box in the world for people who just want
+                    to waste time in front of funky world.
+                  </p>
+                  <h1 class="fw-semibold mb-2" id="banner-price">$600</h1>
+                  <button class="btn" id="button">
+                    Buy Now <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                <div class="banner-image">
+                  <img
+                    src="images/banner-images/xbox.png"
+                    class="d-block w-75 img-fluid"
+                    alt="Banner of headphone"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
     </header>
     <main></main>
     <footer></footer>

@@ -1,3 +1,19 @@
+/* common css start  */
 * {
   font-family: "Poppins", sans-serif;
+}
+#button {
+  background-color: #ff297d;
+  color: #ffffff;
+  padding: 10px 30px;
+  margin-top: 20px;
+}
+
+/* header start  */
+/* slider start  */
+#slider {
+  background-color: #fceae8;
+}
+#banner-price {
+  color: #ff297d;
 }
